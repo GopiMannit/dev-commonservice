@@ -1,0 +1,1 @@
+# mannit_commonservice

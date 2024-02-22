@@ -1,0 +1,1775 @@
+{
+	"info": {
+		"_postman_id": "e21f26e2-c9b1-470d-a91f-c1a2a001c62a",
+		"name": "mannitcommoncervice",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12393609"
+	},
+	"item": [
+		{
+			"name": "signup-invalidmobile",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \r\n    \"username\": \"logesh\", \r\n    \"mobileno\":955153010, \r\n    \"password\" : \"logesh2321\", \r\n    \"email\": \"logesh@gmail.com\", \r\n    \"dob\":\"12/05/1980\",\r\n    \"domain\" : \"IT\", \r\n    \"subdomain\" : \"software\"\r\n }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/mannit/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"mannit",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "signup-invalid domain",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \r\n    \"username\": \"logesh\", \r\n    \"mobileno\":955153010, \r\n    \"password\" : \"logesh2321\", \r\n    \"email\": \"logesh@gmail.com\", \r\n    \"dob\":\"12/05/1980\",\r\n    \"domain\" : \"\", \r\n    \"subdomain\" : \"software\"\r\n }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/mannit/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"mannit",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "signup-invalid user name & pwd",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \r\n    \"username\": \"\", \r\n    \"mobileno\":9551530109, \r\n    \"password\" : \"logesh2321\", \r\n    \"email\": \"logesh@gmail.com\", \r\n    \"dob\":\"12/05/1980\",\r\n    \"domain\" : \"IT\", \r\n    \"subdomain\" : \"software\"\r\n }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/mannit/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"mannit",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "signup-invalid pwd criteria",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \r\n    \"username\": \"logesh\", \r\n    \"mobileno\":9551530100, \r\n    \"password\" : \"logesh2321\", \r\n    \"email\": \"logesh@gmail.com\", \r\n    \"dob\":\"12/05/1980\",\r\n    \"domain\" : \"IT\", \r\n    \"subdomain\" : \"software\"\r\n }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/mannit/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"mannit",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "signup-user name already exist",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \r\n    \"username\": \"logesh\", \r\n    \"mobileno\":9551530100, \r\n    \"password\" : \"Logesh2321&\", \r\n    \"email\": \"logesh@gmail.com\", \r\n    \"dob\":\"12/05/1980\",\r\n    \"domain\" : \"IT\", \r\n    \"subdomain\" : \"software\"\r\n }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/mannit/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"mannit",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "signup-mobile no already exist Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \r\n    \"username\": \"nirmal13\", \r\n    \"mobileno\":9551530100, \r\n    \"password\" : \"Logesh2321&\", \r\n    \"email\": \"logesh@gmail.com\", \r\n    \"dob\":\"12/05/1980\",\r\n    \"domain\" : \"IT\", \r\n    \"subdomain\" : \"software\"\r\n }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/mannit/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"mannit",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "signup mobileno",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \r\n    \"mobileno\":1234567895, \r\n    \"password\" : \"kvbdDow1@\", \r\n    \"email\": \"logesh1@gmail.com\", \r\n    \"dob\":\"12/05/1980\",\r\n    \"domain\" : \"IT\", \r\n    \"subdomain\" : \"software\"\r\n }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/mannit/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"mannit",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "signup username",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"kdbcx6\", \r\n    \"password\" : \"kvbdDow1@\", \r\n    \"email\": \"logesh1@gmail.com\", \r\n    \"dob\":\"12/05/1980\",\r\n    \"domain\" : \"IT\", \r\n    \"subdomain\" : \"software\"\r\n }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/mannit/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"mannit",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "signup username Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"mobileno\":1234567892, \r\n    \"username\": \"kdbcx2\", \r\n    \"password\" : \"kvbdDow1@\", \r\n    \"email\": \"logesh1@gmail.com\", \r\n    \"dob\":\"12/05/1980\",\r\n    \"domain\" : \"IT\", \r\n    \"subdomain\" : \"software\"\r\n }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/mannit/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"mannit",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login - un pwd",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \r\n    \"username\": \"kdbcx1\",  \r\n    \"password\" : \"kvbdDow1@@\"\r\n }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/mannit/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"mannit",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login - mobileno pwd",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \r\n    \"mobileno\":4516523585, \r\n    \"password\" : \"bcdefgjiG1@@\"\r\n }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/mannit/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"mannit",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login - invalid",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \r\n    \"mobileno\":45165235857, \r\n    \"password\" : \"abcdfgreG1@\"\r\n }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/mannit/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"mannit",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "reset - invalid un",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \r\n    \"username\": \"abcdef342\",  \r\n    \"password\" : \"abcdfgreG1@\",\r\n    \"new_password\" : \"abcdfgreG1@\"\r\n }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/mannit/resetpwd",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"mannit",
+						"resetpwd"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "reset - invalid mobile number",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \r\n    \"mobileno\":4516523586, \r\n    \"password\" : \"abcdfgreG1@\",\r\n    \"new_password\" : \"abcdfgreG1@\"\r\n }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/mannit/resetpwd",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"mannit",
+						"resetpwd"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "reset mobileno",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \r\n    \"mobileno\":4516523585, \r\n    \"password\" : \"bcdefgjiG1@\",\r\n    \"new_password\" : \"bcdefgjiG1@@\"\r\n }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/mannit/resetpwd",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"mannit",
+						"resetpwd"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "reset username",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \r\n    \"username\": \"kdbcx1\", \r\n    \"password\" : \"kvbdDow1@\",\r\n    \"new_password\" : \"kvbdDow1@@\"\r\n }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/mannit/resetpwd",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"mannit",
+						"resetpwd"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "abcdfgreG1@",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "abcdef34",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "username",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "password",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \r\n    \"mobileno\":4516523589, \r\n    \"search\" : \"searchstring2\",\r\n    \"searchone\" : \"searchstring2\",\r\n    \"field\" : \"field23\",\r\n    \"fieldone\" : \"field23\",\r\n    \"createdated\" : {\"$date\": \"2000-01-09\"}\r\n }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/mannit/eCreate?domain=IT&subdomain=Software&userId=657ef4b72bafd911c42813d8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"mannit",
+						"eCreate"
+					],
+					"query": [
+						{
+							"key": "domain",
+							"value": "IT"
+						},
+						{
+							"key": "subdomain",
+							"value": "Software"
+						},
+						{
+							"key": "userId",
+							"value": "657ef4b72bafd911c42813d8"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "abcdfgreG1@",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "abcdef34",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "username",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "password",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/mannit/eRead?domain=IT&subdomain=Software&userId=657ef4b72bafd911c42813d8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"mannit",
+						"eRead"
+					],
+					"query": [
+						{
+							"key": "domain",
+							"value": "IT"
+						},
+						{
+							"key": "subdomain",
+							"value": "Software"
+						},
+						{
+							"key": "page",
+							"value": "1",
+							"disabled": true
+						},
+						{
+							"key": "sizePerPage",
+							"value": "5",
+							"disabled": true
+						},
+						{
+							"key": "userId",
+							"value": "657ef4b72bafd911c42813d8"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "abcdfgreG1@",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "abcdef34",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "username",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "password",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \r\n    \"mobileno\":4516523585, \r\n    \"search\" : \"searchstring\",\r\n    \"field\" : \"field23\",\r\n    \"field1\" : \"field123\"\r\n }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/mannit/eUpdate?domain=IT&subdomain=Software&userId=651aaa415d96411ac90c4118&resourceId=657ef4b72bafd911c42813d8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"mannit",
+						"eUpdate"
+					],
+					"query": [
+						{
+							"key": "domain",
+							"value": "IT"
+						},
+						{
+							"key": "subdomain",
+							"value": "Software"
+						},
+						{
+							"key": "userId",
+							"value": "651aaa415d96411ac90c4118"
+						},
+						{
+							"key": "resourceId",
+							"value": "657ef4b72bafd911c42813d8"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "abcdfgreG1@",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "abcdef34",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "username",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "password",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/mannit/eDelete?domain=IT&subdomain=Software&resourceId=6558ea7da8ae4036758cca9c",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"mannit",
+						"eDelete"
+					],
+					"query": [
+						{
+							"key": "domain",
+							"value": "IT"
+						},
+						{
+							"key": "subdomain",
+							"value": "Software"
+						},
+						{
+							"key": "resourceId",
+							"value": "6558ea7da8ae4036758cca9c"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete1",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "abcdfgreG1@",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "abcdef34",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "username",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "password",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/mannit/eDelete?domain=IT&subdomain=Software&userId=657ef4b72bafd911c42813d8&resourceId=657ef7e62bafd911c42813de&mobileno=4516523585&pkKeys=mobileno_L",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"mannit",
+						"eDelete"
+					],
+					"query": [
+						{
+							"key": "domain",
+							"value": "IT"
+						},
+						{
+							"key": "subdomain",
+							"value": "Software"
+						},
+						{
+							"key": "userId",
+							"value": "657ef4b72bafd911c42813d8"
+						},
+						{
+							"key": "resourceId",
+							"value": "657ef7e62bafd911c42813de"
+						},
+						{
+							"key": "mobileno",
+							"value": "4516523585"
+						},
+						{
+							"key": "pkKeys",
+							"value": "mobileno_L"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete2",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "abcdfgreG1@",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "abcdef34",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "username",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "password",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/mannit/eDelete?domain=IT&subdomain=Software&userId=657ef4b72bafd911c42813d8&mobileno=4516523585&pkKeys=mobileno_L",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"mannit",
+						"eDelete"
+					],
+					"query": [
+						{
+							"key": "domain",
+							"value": "IT"
+						},
+						{
+							"key": "subdomain",
+							"value": "Software"
+						},
+						{
+							"key": "userId",
+							"value": "657ef4b72bafd911c42813d8"
+						},
+						{
+							"key": "mobileno",
+							"value": "4516523585"
+						},
+						{
+							"key": "pkKeys",
+							"value": "mobileno_L"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete3",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "abcdfgreG1@",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "abcdef34",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "username",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "password",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/mannit/eDelete?domain=IT&subdomain=Software&userId=657ef4b72bafd911c42813d8&mobileno=4516523589&search=searchstring1&pkKeys=mobileno_L,search_S",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"mannit",
+						"eDelete"
+					],
+					"query": [
+						{
+							"key": "domain",
+							"value": "IT"
+						},
+						{
+							"key": "subdomain",
+							"value": "Software"
+						},
+						{
+							"key": "userId",
+							"value": "657ef4b72bafd911c42813d8"
+						},
+						{
+							"key": "mobileno",
+							"value": "4516523589"
+						},
+						{
+							"key": "search",
+							"value": "searchstring1"
+						},
+						{
+							"key": "pkKeys",
+							"value": "mobileno_L,search_S"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "abcdfgreG1@",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "abcdef34",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "username",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "password",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/mannit/eSearch?domain=IT&subdomain=Software&userId=657ef4b72bafd911c42813d8&sortField=mobileno&sortDirection=desc",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"mannit",
+						"eSearch"
+					],
+					"query": [
+						{
+							"key": "domain",
+							"value": "IT"
+						},
+						{
+							"key": "subdomain",
+							"value": "Software"
+						},
+						{
+							"key": "userId",
+							"value": "657ef4b72bafd911c42813d8"
+						},
+						{
+							"key": "f",
+							"value": "mobileno_L eq 4516523586",
+							"disabled": true
+						},
+						{
+							"key": "sortField",
+							"value": "mobileno"
+						},
+						{
+							"key": "sortDirection",
+							"value": "desc"
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search Date",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "abcdfgreG1@",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "abcdef34",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "username",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "password",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/mannit/eSearch?domain=IT&subdomain=Software&userId=657ef4b72bafd911c42813d8&f=createdated_D lte 10-11-2018&page=1&sizePerPage=100",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"mannit",
+						"eSearch"
+					],
+					"query": [
+						{
+							"key": "domain",
+							"value": "IT"
+						},
+						{
+							"key": "subdomain",
+							"value": "Software"
+						},
+						{
+							"key": "userId",
+							"value": "657ef4b72bafd911c42813d8"
+						},
+						{
+							"key": "f",
+							"value": "createdated_D lte 10-11-2018"
+						},
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "sizePerPage",
+							"value": "100"
+						},
+						{
+							"key": "sortField",
+							"value": "mobileno",
+							"disabled": true
+						},
+						{
+							"key": "sortDirection",
+							"value": "desc",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search or",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "abcdfgreG1@",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "abcdef34",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "username",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "password",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/mannit/eSearch?domain=IT&subdomain=Software&userId=657ef4b72bafd911c42813d8&f=mobileno_L eq 4516523585 or searchone_S eq searchstring2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"mannit",
+						"eSearch"
+					],
+					"query": [
+						{
+							"key": "domain",
+							"value": "IT"
+						},
+						{
+							"key": "subdomain",
+							"value": "Software"
+						},
+						{
+							"key": "userId",
+							"value": "657ef4b72bafd911c42813d8"
+						},
+						{
+							"key": "f",
+							"value": "mobileno_L eq 4516523585 or searchone_S eq searchstring2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search or date",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "abcdfgreG1@",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "abcdef34",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "username",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "password",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/mannit/eSearch?domain=IT&subdomain=Software&userId=657ef4b72bafd911c42813d8&f=createdated_D eq 10-11-2018 or createdated_D eq 09-12-2000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"mannit",
+						"eSearch"
+					],
+					"query": [
+						{
+							"key": "domain",
+							"value": "IT"
+						},
+						{
+							"key": "subdomain",
+							"value": "Software"
+						},
+						{
+							"key": "userId",
+							"value": "657ef4b72bafd911c42813d8"
+						},
+						{
+							"key": "f",
+							"value": "createdated_D eq 10-11-2018 or createdated_D eq 09-12-2000"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search and",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "abcdfgreG1@",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "abcdef34",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "username",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "password",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/mannit/eSearch?domain=IT&subdomain=Software&userId=657ef4b72bafd911c42813d8&f=mobileno_L eq 4516523587 and search_S eq searchstring1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"mannit",
+						"eSearch"
+					],
+					"query": [
+						{
+							"key": "domain",
+							"value": "IT"
+						},
+						{
+							"key": "subdomain",
+							"value": "Software"
+						},
+						{
+							"key": "userId",
+							"value": "657ef4b72bafd911c42813d8"
+						},
+						{
+							"key": "f",
+							"value": "mobileno_L eq 4516523587 and search_S eq searchstring1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search and date",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "abcdfgreG1@",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "abcdef34",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "username",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "password",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/mannit/eSearch?domain=IT&subdomain=Software&userId=657ef4b72bafd911c42813d8&f=createdated_D gt 01-11-2000 and createdated_D lt 30-11-2000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"mannit",
+						"eSearch"
+					],
+					"query": [
+						{
+							"key": "domain",
+							"value": "IT"
+						},
+						{
+							"key": "subdomain",
+							"value": "Software"
+						},
+						{
+							"key": "userId",
+							"value": "657ef4b72bafd911c42813d8"
+						},
+						{
+							"key": "f",
+							"value": "createdated_D gt 01-11-2000 and createdated_D lt 30-11-2000"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search and date eq",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "abcdfgreG1@",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "abcdef34",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "username",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "password",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/mannit/eSearch?domain=IT&subdomain=Software&userId=657ef4b72bafd911c42813d8&f=createdated_D gte 01-11-2000 and createdated_D lte 30-11-2000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"mannit",
+						"eSearch"
+					],
+					"query": [
+						{
+							"key": "domain",
+							"value": "IT"
+						},
+						{
+							"key": "subdomain",
+							"value": "Software"
+						},
+						{
+							"key": "userId",
+							"value": "657ef4b72bafd911c42813d8"
+						},
+						{
+							"key": "f",
+							"value": "createdated_D gte 01-11-2000 and createdated_D lte 30-11-2000"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search invalid",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "abcdfgreG1@",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "abcdef34",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "username",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "password",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/mannit/eSearch?domain=IT&subdomain=Software&userId=657ef4b72bafd911c42813d8&f=mobileno_L 4516523586",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"mannit",
+						"eSearch"
+					],
+					"query": [
+						{
+							"key": "domain",
+							"value": "IT"
+						},
+						{
+							"key": "subdomain",
+							"value": "Software"
+						},
+						{
+							"key": "userId",
+							"value": "657ef4b72bafd911c42813d8"
+						},
+						{
+							"key": "f",
+							"value": "mobileno_L 4516523586"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search With Pagination",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "abcdfgreG1@",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "abcdef34",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "username",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "password",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/mannit/eSearch?domain=IT&subdomain=Software&userId=657ef4b72bafd911c42813d8&page=1&sizePerPage=20&sortField=id&sortDirection=asc&f=createdated_D lte 10-11-2018",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"mannit",
+						"eSearch"
+					],
+					"query": [
+						{
+							"key": "domain",
+							"value": "IT"
+						},
+						{
+							"key": "subdomain",
+							"value": "Software"
+						},
+						{
+							"key": "userId",
+							"value": "657ef4b72bafd911c42813d8"
+						},
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "sizePerPage",
+							"value": "20"
+						},
+						{
+							"key": "sortField",
+							"value": "id"
+						},
+						{
+							"key": "sortDirection",
+							"value": "asc"
+						},
+						{
+							"key": null,
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "f",
+							"value": "createdated_D lte 10-11-2018"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
